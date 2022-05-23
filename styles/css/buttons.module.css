@@ -1,0 +1,36 @@
+.button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: #0099ff;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: white;
+  border: 1px solid white;
+}
+.button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0099ff;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+.button:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+/*# sourceMappingURL=buttons.module.css.map */

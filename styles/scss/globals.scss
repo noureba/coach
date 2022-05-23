@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap");
+@import "./vars";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+.header {
+  
+  background: linear-gradient(
+      to left,
+      rgb(5, 5, 5, 0.7),
+      rgb(0, 153, 255)
+    ),
+    url("https://res.cloudinary.com/dia3y316g/image/upload/v1653149354/Coach/lifeCoach_wtisnq.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+// slider
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(
+    to left,
+    rgb(5, 5, 5, 0.7),
+    rgb(0, 153, 255)
+  ),
+  url("https://res.cloudinary.com/dia3y316g/image/upload/v1653149265/Coach/slide_hiarne.png");
+  background-repeat: no-repeat;
+}
+// FDM = for desktop and mobile
+.FDM{
+  width: 40%;
+}
+.FDM2{
+  width: 23%;
+}
+@media(max-width:900px){
+  .FDM{
+    width: 100%;
+  }
+  .FDM2{
+    width: 100%;
+  }
+}
+
+.test{
+  border: 1px solid red;
+}
+
+
+
+
+
